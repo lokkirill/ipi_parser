@@ -1,7 +1,6 @@
 # THIS IS CHROME EXTENSION WITH PAINLESS UX FOR
 # <https://ipindiaonline.gov.in/tmrpublicsearch/frmmain.aspx>
 
-GOVNO IZ JOPI
 
 # Chrome Extension
 For a basis to take here [this repository](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate)
