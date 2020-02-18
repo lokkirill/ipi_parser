@@ -1,4 +1,7 @@
+import React from 'react';
+import { render } from 'react-dom';
+import PopupLoading from './containers/popup/PopupLoading';
 import "../css/popup.css";
-import hello from "./popup/example";
 
-hello();
+const root = document.getElementById('root');
+render(<PopupLoading />, root);

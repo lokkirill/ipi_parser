@@ -1,6 +1,4 @@
-const webpack = require("webpack"),
-  path = require("path"),
-  CleanWebpackPlugin = require("clean-webpack-plugin"),
+const path = require("path"),
   CopyWebpackPlugin = require("copy-webpack-plugin"),
   HtmlWebpackPlugin = require("html-webpack-plugin"),
   WriteFilePlugin = require("write-file-webpack-plugin");

@@ -8,10 +8,6 @@
     "build:prod": "NODE_ENV=production ./node_modules/.bin/webpack --watch --progress"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "5.0.5",
     "css-loader": "3.2.0",
@@ -28,6 +24,14 @@
     "write-file-webpack-plugin": "4.5.1"
   },
   "dependencies": {
-    "babel-loader": "^8.0.6"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19"
   }
 }
