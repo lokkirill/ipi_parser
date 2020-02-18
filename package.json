@@ -1,23 +1,33 @@
 {
   "name": "chrome-extension-webpack",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "A boilerplate to chrome extension with webpack",
   "scripts": {
-    "build": "node utils/build.js",
-    "start": "node utils/webserver.js"
+    "build": "yarn run build:local",
+    "build:local": "NODE_ENV=development ./node_modules/.bin/webpack --watch --progress",
+    "build:prod": "NODE_ENV=production ./node_modules/.bin/webpack --watch --progress"
   },
   "devDependencies": {
-    "clean-webpack-plugin": "3.0.0",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "5.0.5",
     "css-loader": "3.2.0",
     "file-loader": "4.3.0",
     "fs-extra": "8.1.0",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "style-loader": "1.0.0",
     "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0",
-    "write-file-webpack-plugin": "4.5.1",
-    "webpack-cli": "3.3.10"
+    "write-file-webpack-plugin": "4.5.1"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.6"
   }
 }
